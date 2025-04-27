@@ -20,6 +20,7 @@ docker-compose up -d
 ````
 
 설치시 localhost:3306 과 localhost:8081 에서 확인 가능<br>
+비밀번호는 docker-compose.yml 에서 확인<br>
 
 Docker의 좌측 메뉴 Images 에서 껏다켰다 가능<br>
 
