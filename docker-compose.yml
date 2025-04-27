@@ -36,5 +36,4 @@ volumes:
   mysql_data:
 
 networks:
-  my-network:
-    external: true 
+  my-network: 
