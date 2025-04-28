@@ -1,4 +1,5 @@
 # Project Pages<br>
+
 - Front: [cloneProjectFront](https://github.com/laeongmulti/cloneProjectFront)<br>
 - Back: [cloneProjectBackBoot](https://github.com/laeongmulti/cloneProjectBackBoot)<br>
 - DB: [cloneProjectDB](https://github.com/laeongmulti/cloneProjectDB)<br>
@@ -7,6 +8,7 @@
 
 **소개**<br>
 해당 DB는 Mysql 기반의 DB 생성 및 PhpMyAdmin은 실행.<br>
+
 - Mysql Version: 8.0<br>
 - DB port:3306<br>
 - PhpMyAdmin port: 8081<br>
@@ -14,22 +16,26 @@
 **설치방법**<br>
 인터넷에서 Docker Desktop 필수 설치<br>
 
-도커에 mysql_db 를 업로드<br>
-````bash
-docker-compose up -d
-````
-
 도커에서 네트워크 생성<br>
+
 ```bash
 docker network create my-network
 ```
+
 도커에서 서버가 실행된다고 해도 컨테이너들은 모두 독립적임.<br>
 따라서 도커만의 네트워크를 생성해서 여기에 프론트, 백, DB를 붙여주면 서로 접근해서 사용할 수 있음.<br>
 
 ```bash
 docker network connect my-network mysql_db
 ```
+
 이렇게 하면 백에서 my-netowrk를 통해 mysql_db를 접근 가능함<br>
+
+도커에 mysql_db 를 업로드<br>
+
+```bash
+docker-compose up -d
+```
 
 설치시 localhost:3306 과 localhost:8081 에서 확인 가능<br>
 비밀번호는 docker-compose.yml 에서 확인<br>
