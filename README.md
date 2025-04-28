@@ -42,6 +42,11 @@ docker network connect my-network mysql_db
 설치시 localhost:3306 과 localhost:8081 에서 확인 가능<br>
 비밀번호는 docker-compose.yml 에서 확인<br>
 
+비밀번호는 docker-compose.yml 에서 확인 가능<br>
+**초기 세팅**<br>
+ID: admin<br>
+PW: admin1!<br>
+
 Docker의 좌측 메뉴 Containers 에서 껏다켰다 가능<br>
 
 프로젝트의 BackEnd 실행시 DB서버가 없는경우 서버가 죽으니 먼저 실행해두는것을 권장함<br>
